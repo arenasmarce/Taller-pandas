@@ -93,3 +93,47 @@ Para entregar, agrega al final de este `README.md` una sección con tu nombre y 
 3. ¿Los clientes VIP compran más que los Regulares?
 4. ¿Qué método de pago es el más usado?
 5. ¿Cuáles son los cinco clientes con más compras?
+
+
+## DESARROLLO DEL TALLER 
+
+Nombre: DIANA MARCELA ARENAS TOBON
+
+### 1. ¿Qué categoría genera más ingresos?
+
+La categoría Tecnologia genera más ingresos, con un total de 14.290.000.
+
+Criterio: agrupé las ventas por categoría, sumé la columna total y ordené los resultados de mayor a menor.
+
+### 2. ¿Qué canal vende más?
+
+Online vende más: registra 35 ventas y genera 14.669.000 en ingresos. Tienda registra 33 ventas y genera 4.507.000.
+
+Criterio: agrupé por canal, conté las ventas usando id_venta y sumé la columna total. Online supera a Tienda tanto en número de ventas como en ingresos.
+
+### 3. ¿Los clientes VIP compran más que los Regulares?
+
+Sí, en promedio por cliente. Los VIP realizan aproximadamente 1,21 compras y gastan 336.083,33 por cliente. Los Regulares realizan 1,08 compras y gastan 308.611,11 por cliente.
+
+Criterio: agrupé por segmento, conté los clientes únicos y calculé las compras y el gasto total. Después dividí las compras y el gasto entre el número de clientes de cada segmento. Comparé promedios porque hay 24 clientes VIP y 36 Regulares.
+
+### 4. ¿Qué método de pago es el más usado?
+
+El método más usado es Efectivo, con 30 ventas. Le siguen Tarjeta con 25 y Transferencia con 13.
+
+Criterio: usé value_counts() en la columna metodo_pago para contar cuántas ventas corresponden a cada método. Comparé la frecuencia de uso, no el dinero pagado.
+
+### 5. ¿Cuáles son los cinco clientes con más compras?
+
+Los cinco primeros clientes son:
+
+| Cliente | Compras | Gasto total |
+|---|---:|---:|
+| Nicolas Cardona | 2 | 2.515.000 |
+| Matias Rodriguez | 2 | 1.278.000 |
+| Mia Quintero | 2 | 1.090.000 |
+| Luna Montoya | 2 | 1.007.000 |
+| Luis Perez | 2 | 730.000 |
+
+Criterio: agrupé por id_cliente y nombre_cliente, conté las compras y sumé el gasto total. Ordené primero por cantidad de compras y, en caso de empate, por gasto total de mayor a menor. Finalmente seleccioné los cinco primeros.
+

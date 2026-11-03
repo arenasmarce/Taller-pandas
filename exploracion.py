@@ -7,9 +7,10 @@ _, ventas = cargar_datos()
 # Indexación: usamos id_venta como índice
 ventas = ventas.set_index("id_venta")
 
+
 print("Primeras filas con índice id_venta:")
 print(ventas.head())
-
+print(ventas.tail())
 # .loc busca por ETIQUETA (el ID de venta)
 print("\n.loc['V003', 'total']:")
 print(ventas.loc["V003", "total"])
@@ -33,3 +34,4 @@ print("\nFilas de abril:", len(abril), "| filas de mayo:", len(mayo))
 
 total = pd.concat([abril, mayo])
 print("Filas tras concat:", len(total), "| filas originales:", len(ventas))
+
